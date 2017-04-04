@@ -1,1 +1,17 @@
-gitNgitHub_setup.txt
+git config --global user.email "danotsonof@gmail.com"
+git config --global user.name "danotsonof"
+git init
+touch "index.html"
+dir > text.txt
+git status
+git add index.html
+git add . //git add *.*
+git commit -m "//describe d commit"
+git remote add origin https://github.com/Danotsonof/gitTut.git
+git push -u origin master
+git checkout -- .
+git clone https://github.com/Danotsonof/gitTut
+git remote -v
+git remote set-url origin https://github.com/Danotsonof/gitTut
+git log
+git --help
