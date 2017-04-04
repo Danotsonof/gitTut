@@ -10,8 +10,24 @@ git commit -m "//describe d commit"
 git remote add origin https://github.com/Danotsonof/gitTut.git
 git push -u origin master
 git checkout -- .
+
+git log
+git --help
+git push -h
+
+//cloning someone's repo
 git clone https://github.com/Danotsonof/gitTut
 git remote -v
 git remote set-url origin https://github.com/Danotsonof/gitTut
-git log
-git --help
+
+//Branching and Merging
+git branch "branch name" //without quotatn marks
+git branch newBranch
+git checkout newBranch //switch from master branch to newBranch
+git add index.html
+git add .
+git commit -m "//describe d commit"
+git push -u origin newBranch
+git checkout master //switch from newBranch to master branch
+git merge newBranch
+git push -u origin master
