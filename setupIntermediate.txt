@@ -1,0 +1,9 @@
+//delete branch
+git branch -d newBranch //deletes from local
+git push origin --delete newBranch //deletes from remote
+
+git tag ver.1
+git push --tag
+git push origin ver.1
+git tag -d ver.1
+git push origin -d ver.1
